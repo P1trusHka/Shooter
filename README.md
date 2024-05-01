@@ -38,4 +38,4 @@ We hope you have fun playing the Shooter!
 
 <i> Happy gaming! 🎮</i>
 
-<i>The Labyrinth Team</i>
+
