@@ -1,41 +1,32 @@
 # Shooter Game
 
-Welcome to the Shooterh GitHub repository! Shooter is a simple cross-platform game written in Python.
+This is a simple cross-platform shooter game written in Python using the Pygame library.
 
 ## Installation
 
-To run Shooter on your local machine, follow these steps:
+1. Clone the repository or download the zip file to your local machine.
+2. Make sure you have Python and Pygame installed on your system.
+3. Run the main.py file to start the game.
 
-1. Clone the repository to your machine:
-```
-git clone https://github.com/P1trusHka/Shooter.git
-```
+## Gameplay
 
-2. Make sure you have Python installed on your system.
+- Use the arrow keys to move the player character.
+- Press the space bar to shoot bullets at the enemy.
+- The goal is to avoid enemy bullets and destroy as many enemies as possible to earn points.
+- The game ends when the player's health reaches zero or the player destroys all enemies.
 
-3. Run the main Python script to start the game:
-```
-python main.py
-```
+## Controls
 
-4. Follow the on-screen instructions to navigate through the maze and reach the end goal.
+- Up Arrow: Move up
+- Down Arrow: Move down
+- Left Arrow: Move left
+- Right Arrow: Move right
+- Space Bar: Shoot
 
-## Game Features
+## Contributions
 
-- Keyboard controls for movement
-- Multiple difficulty levels
-- Cross-platform compatibility
+Contributions are welcome! If you have any suggestions or improvements, feel free to submit a pull request.
 
-## Contributing
+## License
 
-We welcome contributions to enhance the Shooter game! If you have any ideas for new features, bug fixes, or improvements, feel free to fork the repository and submit a pull request.
-
-## Support
-
-If you encounter any issues or have any questions about Shooter, please feel free to open an issue on the GitHub repository.
-
-We hope you have fun playing the Shooter!
-
-<i> Happy gaming! 🎮</i>
-
-
+This project is licensed under the [MIT License](https://github.com/P1trusHka/Shooter/blob/main/LICENSE). Feel free to use and modify the code as needed.
