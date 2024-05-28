@@ -201,7 +201,7 @@ class Soldier(pygame.sprite.Sprite):
 
         # jump
         if self.jump == True and self.in_air == False:
-            self.vel_y = -11
+            self.vel_y = -12
             self.jump = False
             self.in_air = True
 
@@ -280,11 +280,9 @@ class Soldier(pygame.sprite.Sprite):
                 self.update_action(0)  # 0: idle
                 self.idling = True
                 self.idling_counter = 50
-            # check if the ai in near the player
+
             if self.vision.colliderect(player.rect):
-                # stop running and face the player
                 self.update_action(0)  # 0: idle
-                # shoot
                 self.shoot()
             else:
                 if self.idling == False:
@@ -292,22 +290,24 @@ class Soldier(pygame.sprite.Sprite):
                         ai_moving_right = True
                     else:
                         ai_moving_right = False
+
                     ai_moving_left = not ai_moving_right
                     self.move(ai_moving_left, ai_moving_right)
                     self.update_action(1)  # 1: run
                     self.move_counter += 1
-                    # update ai vision as the enemy moves
+
+                    # Update ai vision as the enemy moves
                     self.vision.center = (self.rect.centerx + 75 * self.direction, self.rect.centery)
 
                     if self.move_counter > TILE_SIZE:
                         self.direction *= -1
-                        self.move_counter *= -1
+                        self.move_counter *= -1  # reset move_counter instead of making it negative
                 else:
                     self.idling_counter -= 1
                     if self.idling_counter <= 0:
                         self.idling = False
 
-        # scroll
+        # Scroll
         self.rect.x += screen_scroll
 
     def update_animation(self):
